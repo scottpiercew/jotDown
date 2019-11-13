@@ -1,0 +1,26 @@
+{
+  "name": "jotDown",
+  "version": "1.0.0",
+  "description": "Your ideas deserve to be jot down. This simple note taking app uses offline storage to keep your ideas on your machine.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "browser-sync start -s 'views' -f 'public/*, views/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottpiercew/jotDown.git"
+  },
+  "keywords": [],
+  "author": "Scott Pierce-Wrobel <scottpiercew@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottpiercew/jotDown/issues"
+  },
+  "homepage": "https://github.com/scottpiercew/jotDown#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "open": "^7.0.0"
+  }
+}
