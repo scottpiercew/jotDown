@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "browser-sync start -s 'views' -f 'public/*, views/*'"
+    "dev": "node app.js & browser-sync start -p 'localhost:3000' --serveStatic 'public' --files 'public, views'"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/scottpiercew/jotDown#readme",
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "open": "^7.0.0"
