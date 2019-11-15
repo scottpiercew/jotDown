@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node app.js & browser-sync start -p 'localhost:3000' --serveStatic 'public' --files 'public, views'"
+    "dev": "node app.js & browser-sync start -p 'localhost:3000' --serveStatic 'public' --files 'public, views, */localforage.js'"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "browser-sync": "^2.26.7",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
+    "localforage": "^1.7.3",
     "open": "^7.0.0"
   }
 }

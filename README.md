@@ -9,6 +9,10 @@
 - [Open 7.0.0](https://www.npmjs.com/package/open)
 - [ejs 2.7.1](https://www.npmjs.com/package/ejs)
 
+## Storage
+
+- Notes are saved in the browser's IndexedDB using the pollyfill [localForage 1.7.3](https://localforage.github.io/localForage/)
+
 ## Setup
 
 - In the terminal at the root directory start a local Express server with `npm start`
