@@ -11,7 +11,7 @@ app.set("view engine", "html");
 app.use(express.static("public"));
 app.use("/", home);
 
-app.get("*", function(req, res) {
+app.get("/*", function(req, res) {
   res
     .status(404)
     .send(
@@ -26,3 +26,5 @@ app.listen(port, function(err) {
     open("http://localhost:" + port);
   }
 });
+
+module.exports = app;

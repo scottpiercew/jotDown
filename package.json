@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "node app.js & browser-sync start -p 'localhost:3000' --serveStatic 'public' --files 'public, views, */localforage.js'"
+    "dev": "node app.js & browser-sync start -p 'localhost:3000' --serveStatic 'public' --files 'public, views, */localforage.js'",
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
   "homepage": "https://github.com/scottpiercew/jotDown#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
+    "chai": "^4.2.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "localforage": "^1.7.3",
-    "open": "^7.0.0"
+    "mocha": "^6.2.2",
+    "open": "^7.0.0",
+    "supertest": "^4.0.2"
   }
 }

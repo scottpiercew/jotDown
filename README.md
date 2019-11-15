@@ -11,7 +11,7 @@
 
 ## Storage
 
-- Notes are saved in the browser's IndexedDB using the pollyfill [localForage 1.7.3](https://localforage.github.io/localForage/)
+- Notes are saved in localStorage for offline functionality
 
 ## Setup
 
@@ -21,3 +21,9 @@
 ## Development
 
 - Start a local server with [BrowserSync 2.26.7](https://www.browsersync.io/) by running `npm run dev`
+
+## Testing
+
+- [mocha 6.2.2](https://mochajs.org/)
+- [supertest 4.0.2](https://www.npmjs.com/package/supertest)
+- [chai 4.2.0](https://www.npmjs.com/package/chai)
