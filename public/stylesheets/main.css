@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+#background__container {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  z-index: -1;
+}
+.background__trapezoid {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+  transform: skewY(-12deg);
+  transform-origin: top left;
+  border-bottom-right-radius: 70% 14%;
+}
+.background__trapezoid span {
+  height: 150px;
+  position: absolute;
+  background: blue;
+}
+.background__trapezoid :first-child {
+  width: 33.33333%;
+  left: -16.66666%;
+  background: #53f;
+}
+.background__trapezoid :nth-child(2) {
+  width: 33.33333%;
+  top: 0;
+  left: 16.66666%;
+  right: auto;
+  background: #4553ff;
+}
+.background__trapezoid :nth-child(3) {
+  width: 48%;
+  left: 49.99999%;
+  bottom: auto;
+  background: #4f40ff;
+  border-bottom-right-radius: 100% 18%;
+}
+.background__trapezoid :nth-child(4) {
+  width: 33.33333%;
+  top: 380px;
+  right: -16.66666%;
+  background: #25ddf5;
+  border-bottom-right-radius: 90%;
+}
+.background__trapezoid :nth-child(5) {
+  width: 33.33333%;
+  bottom: 0;
+  background: #1fa2ff;
+}
+.list-group {
+  line-height: 3em;
+  font-size: 1.5em;
+  margin-left: 3em;
+}
+
+#intro__container h1 {
+  position: relative;
+  color: #fff;
+  margin: 0;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#intro__container p {
+  max-width: 500px;
+  margin-top: 20px;
+  color: #d9fcff;
+}
+#content__container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 1em;
+  align-items: center;
+}
+#intro__container {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+#newBtn {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+#notesList {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#editor__container {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+#noteEditor {
+  display: block;
+}
+.note {
+  height: 3em;
+  background-color: #fff;
+  margin: 2px;
+  padding: 6px;
+  opacity: .7;
+}

@@ -7,6 +7,7 @@ function init() {
     const note = document.createElement("div");
     const utc = window.localStorage.key(i);
     note.innerText = noteTitle(window.localStorage.getItem(utc));
+    note.classList.add("note");
     note.setAttribute("data-name", utc);
     notesList.appendChild(note);
   }
@@ -58,6 +59,7 @@ function noteTitle(char) {
 
 function newNote() {
   noteEditor.value = "";
+  noteEditor.focus();
 }
 
 function deleteNote() {

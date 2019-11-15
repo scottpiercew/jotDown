@@ -8,20 +8,38 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
   </head>
   <body>
-    <h1>jotDown</h1>
-    <div>
-      <button type="button" id="newBtn">New</button>
-      <button type="button" id="deleteBtn">Delete</button>
-      <div id="notesList"></div>
-    </div>
-    <textarea
-      name="noteEditor"
-      id="noteEditor"
-      cols="30"
-      rows="10"
-      placeholder="New Note"
-      autofocus
-    ></textarea>
+    <div id="background__container">
+        <div class="background__trapezoid">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    <main id="content__container">
+        <div id="intro__container">
+            <h1>jotDown</h1>
+            <p>Your ideas deserve to be jot down.</p>
+        </div>
+        <button type="button" id="newBtn">New</button>
+        <div id="notesList"></div>
+        <div id="editor__container">
+
+          <textarea
+          name="noteEditor"
+          id="noteEditor"
+          cols="30"
+          rows="10"
+          placeholder="New Note"
+          autofocus
+          ></textarea>
+          <button type="button" id="deleteBtn">Delete</button>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
   </body>
   <script src="/javascripts/main.js"></script>
 </html>

@@ -24,6 +24,7 @@
 
 ## Testing
 
+- The npm script for testing is `npm test`
 - [mocha 6.2.2](https://mochajs.org/)
 - [supertest 4.0.2](https://www.npmjs.com/package/supertest)
 - [chai 4.2.0](https://www.npmjs.com/package/chai)
