@@ -9,37 +9,38 @@
   </head>
   <body>
     <div id="background__container">
-        <div class="background__trapezoid">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-    <main id="content__container">
+      <div class="background__trapezoid">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <main id="content__container">
         <div id="intro__container">
-            <h1>jotDown</h1>
-            <p>Your ideas deserve to be jot down.</p>
+          <h1>jotDown</h1>
+          <p>Your ideas deserve to be jot down</p>
         </div>
-        <button type="button" id="newBtn">New</button>
+        <div id="new__container">
+          <button type="button" id="newBtn">Create New Note</button>
+        </div>
         <div id="notesList"></div>
         <div id="editor__container">
-
           <textarea
-          name="noteEditor"
-          id="noteEditor"
-          cols="30"
-          rows="10"
-          placeholder="New Note"
-          autofocus
+            name="noteEditor"
+            id="noteEditor"
+            cols="30"
+            rows="12"
+            placeholder="New Note"
+            autofocus
           ></textarea>
-          <button type="button" id="deleteBtn">Delete</button>
-      </div>
-    </main>
-    <footer>
-
+          <button type="button" id="deleteBtn">Delete Note</button>
+        </div>
+      </main>
+    </div>
+    <footer id="footer__container">
+      <p>2019 Scott Pierce-Wrobel</p>
     </footer>
-  </div>
   </body>
   <script src="/javascripts/main.js"></script>
 </html>

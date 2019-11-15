@@ -4,7 +4,7 @@ const noteEditor = document.querySelector("#noteEditor");
 
 function init() {
   for (let i = 0; i < window.localStorage.length; i++) {
-    const note = document.createElement("div");
+    const note = document.createElement("button");
     const utc = window.localStorage.key(i);
     note.innerText = noteTitle(window.localStorage.getItem(utc));
     note.classList.add("note");
@@ -32,7 +32,7 @@ function checkEmpty() {
   if (noteEditor.value.length === 0) {
     let utc = Date.now().toString();
     noteEditor.setAttribute("data-utc", utc);
-    const note = document.createElement("div");
+    const note = document.createElement("button");
     note.setAttribute("data-name", utc);
     note.classList.add("note");
     notesList.appendChild(note);
