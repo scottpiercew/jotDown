@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/scottpiercew/jotDown#readme",
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "chai": "^4.2.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
